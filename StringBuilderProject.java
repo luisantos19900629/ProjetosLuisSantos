@@ -31,6 +31,21 @@ public class StringBuilderProject {
         b = b.append("f").append("g"); // lets add more two letters
         System.out.println("a= " + a);
         System.out.println("b= " + b);
+        
+        // add another methods used in StringBuilder
+        
+        System.out.println("add another methods used in StringBuilder");
+        
+        StringBuilder ani = new StringBuilder("animals");
+        String sub = ani.substring(ani.indexOf("a"), ani.indexOf("al"));
+        int len = ani.length();// method to give us the size
+        char ch =ani.charAt(6); // position on the index
+        System.out.println(sub + " " + len + " " + ch);
+        
+      StringBuilder ins = new StringBuilder("animals");
+      ins.insert(7," - "); // add "-" in animals -
+      ins.insert(0," - "); // add "-" in -animals
+      ins.insert(4," - "); // add "-" ani-mals
+        System.out.println(ins);
     }
-    
 }
